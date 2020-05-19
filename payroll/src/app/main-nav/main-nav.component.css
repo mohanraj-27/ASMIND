@@ -1,0 +1,49 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.tool-icon
+{
+  position: absolute;
+  right: 50px;
+  color:white;
+}
+.primary
+{
+  background-color:lightblue;
+  padding-left: 2ch;
+
+}
+h6
+{
+  background-color:lightskyblue;
+}
+.toolbar
+{
+background-color: lightblue;
+}
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('/assets/mohan.jpg');
+  background-size:cover;
+}
+.panel
+{
+  background-color: lightblue;
+}

@@ -1,0 +1,37 @@
+<br>
+<position-new></position-new>
+<br>
+<br>
+<h5>POSITION LIST</h5>
+<br>
+<div class="col-md-6" class="mat-elevation-z8">
+  <table class="table table-striped" class="table table-bordered" class="table-dark">
+  <thead>
+  <tr>
+    <th>POSITION-TITLE</th>
+    <th>RATE-PER-HOUR</th>
+    <th class="center" colspan="4" scope="colgroup">TOOLS</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let employee of Employees">
+          <td>{{employee.title}}</td>
+          <td>{{employee.rate}}</td>
+          <td><button class="btn btn-danger" (click)="deleteEmployee(employee)">
+            <mat-icon>
+              delete_outline
+            </mat-icon>
+            DELETE
+          </button>
+          <td><button class="btn btn-warning" (click)="createEmployee(employee)">
+            <mat-icon>
+              update
+            </mat-icon>UPDATE</button>
+            </td>     
+          </tr>
+  </tbody>
+    </table>
+  </div>
+
+
+

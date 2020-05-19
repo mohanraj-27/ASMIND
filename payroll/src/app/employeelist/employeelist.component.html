@@ -1,0 +1,41 @@
+<br>
+<list-new></list-new>
+<br>
+<br>
+<h5>EMPLOYEE LIST</h5>
+<br>
+
+<div class="col-md-6" class="mat-elevation-z8">
+  <table class="table table-striped" class="table table-bordered" class="table-dark">
+  <thead>
+  <tr>
+    <th>EMPLOYEE ID</th>
+    <th>EMPLOYEE NAME</th>
+    <th>POSITION</th>
+    <th>SCHEDULE</th>
+    <th>MEMBER</th>
+    <th class="center" colspan="4" scope="colgroup">TOOLS</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let employee of Employees">
+          <td>{{employee.id}}</td>
+          <td>{{employee.name}}</td>
+          <td>{{employee.position}}</td>
+          <td>{{employee.schedule}}</td>
+          <td>{{employee.member}}</td>
+          <td><button class="btn btn-danger" (click)="deleteEmployee(employee)">
+            <mat-icon>
+              delete_outline
+            </mat-icon>
+            DELETE
+          </button>
+          <td><button class="btn btn-warning" (click)="createEmployee(employee)">
+            <mat-icon>
+              update
+            </mat-icon>UPDATE</button>
+            </td>     
+          </tr>
+  </tbody>
+    </table>
+  </div>

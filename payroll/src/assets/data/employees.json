@@ -1,0 +1,8 @@
+[
+    {"date":21,"name":"mohan","id":101,"timein":10,"timeout":9,"position": "programmer", "schedule": "morning","member": 2018,"title":"Graphic Designer", "rate":220.76,"desc":"progress", "amt":220,"hours": 9,"in":9.01 , "out":4.07, "gross": 0, "deductions":24000, "cash":5000, "net":-740000},
+    {"date":21,"name":"raj","id":102,"timein":10,"timeout":9,"position": "programmer", "schedule": "morning","member": 2018,"title":"Marketing", "rate":900.32,"desc":"progress", "amt":700,"hours": 9,"in":6.30 , "out":3.25, "gross": 0, "deductions":24000, "cash":5000, "net":-740000},
+    {"date":21,"name":"vicky","id":103,"timein":10,"timeout":9,"position": "programmer", "schedule": "morning","member": 2018,"title":"Writer", "rate":2200,"desc":"progress", "amt":2000,"hours": 10,"in":6.30 , "out":3.25, "gross": 0, "deductions":24000, "cash":5000, "net":-740000},
+    {"date":21,"name":"kamalesh","id":104,"timein":10,"timeout":9,"position": "programmer", "schedule": "morning","member": 2018,"title":"Software Engineering", "rate":5376,"desc":"progress", "amt":1000,"hours": 10,"in":6.30 , "out":3.25, "gross": 0, "deductions":24000, "cash":5000, "net":-740000}
+     
+]
+

@@ -1,0 +1,78 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+
+    <!-- <mat-toolbar class="toolbar">A P SYSTEM</mat-toolbar> -->
+
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Mohanraj</mat-card-title>
+        <mat-card-subtitle class=
+        'online'>. online</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+
+    <mat-nav-list class="primary">
+      <h6>MANAGE</h6>
+      <a mat-list-item [routerLink]="['attendance']">Attendance</a>
+
+      <mat-accordion>
+        <mat-expansion-panel  class="panel">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          EMPLOYEE
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <a mat-list-item [routerLink]="['employeelist']">Employeelist</a>
+      <a mat-list-item [routerLink]="['overtime']">Overtime</a>
+      <a mat-list-item [routerLink]="['cashadvance']">CashAdvance</a>
+      <a mat-list-item [routerLink]="['schedules']">Schedules</a>
+      </mat-expansion-panel>
+      </mat-accordion>
+
+      <!-- <mat-radio-button value="2">
+          <a mat-list-item [routerLink]="['overtime']">Overtime</a>
+        </mat-radio-button>
+        <mat-radio-button value="3">
+          <a mat-list-item [routerLink]="['cashadvance']">CashAdvance</a>
+        </mat-radio-button>
+        <mat-radio-button value="4">
+          <a mat-list-item [routerLink]="['schedules']">Schedules</a>
+        </mat-radio-button>
+      </mat-radio-group> -->
+
+
+
+      <a mat-list-item [routerLink]="['deductions']">Deductions</a>
+      <a mat-list-item [routerLink]="['positions']">Positions</a>
+      <h6>PRINTABLE</h6>
+      <a mat-list-item [routerLink]="['payroll']">payroll</a>
+      <a mat-list-item [routerLink]="['schedule']">Schedule</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span class="text">Attendance Management</span>    
+        <a [routerLink]="['/']">
+          <span>
+            <mat-icon aria-hidden="false" aria-label="Example home icon" class="tool-icon">
+              home
+            </mat-icon>
+          </span>
+        </a>     
+    </mat-toolbar>
+    <ng-content></ng-content>
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
